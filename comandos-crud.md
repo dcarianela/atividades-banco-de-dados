@@ -37,5 +37,60 @@ VALUES(
     3999.45,
     7,
     2   -- id do fabricante Dell
-)
+);
+
+INSERT INTO produtos(nome, descricao, preco, quantidade, fabricante_id)
+VALUES(
+    'Tablet Android',
+    'Tablet com a versão 16 do sistema operacional Android, possui tela de 10 polegadas e armazenamento de 128 GB. Estou sem ideias do que escrever aqui.',
+    900,
+    12,
+    5   -- Samsung
+);
+
+INSERT INTO produtos(nome, descricao, preco, quantidade, fabricante_id)
+VALUES(
+    'Geladeira',
+    'Refrigerador frost-free com acesso à Internet',
+    5000,
+    12,
+    6   -- Brastemp
+),
+(
+    'iPhone 18 Pro Max Ferradão',
+    'Smartphone Apple cheio das frescuras e caro pra caramba... coisa de rico...',
+    9666.66,
+    3,
+    3   -- Apple
+),
+(
+    'iPad Mini',
+    'Tablet Apple com tela retina display e bla bla bla e mó bunitinha',
+    4999.12,
+    5,
+    3   -- Apple
+);
+```
+
+
+## Comandos do exercícios
+
+```sql
+INSERT INTO fabricantes (nome) VALUES('Positivo'),('Microsoft');
+
+INSERT INTO produtos(nome, descricao, preco, quantidade, fabricante_id)
+VALUES(
+    'Xbox Series S',
+    'Velocidade e desempenho de última geração.',
+    1997,
+    5,
+    8   -- Microsoft
+),
+(
+    'Notebook Motion',
+    'Intel Dual Core 4GB de RAM, 128GB SSD e Tela 14,1 polegadas.',
+    1213.65,
+    8,
+    7   -- Positivo
+);
 ```
