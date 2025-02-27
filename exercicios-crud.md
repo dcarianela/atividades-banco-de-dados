@@ -103,3 +103,29 @@ WHERE id = 4;
 SELECT titulo, genero_id FROM filmes
 WHERE genero_id != 1;
 ```
+
+---
+
+### VISUALIZANDO JUNÇÃO/JOIN
+
+```sql
+SELECT
+    filmes.titulo Filme, 
+    generos.nome Gênero
+FROM filmes JOIN generos
+ON filmes.genero_id = generos.id;
+
+SELECT
+    filmes.titulo Filme,
+    detalhes.sinopse Sinopse
+FROM filmes JOIN detalhes
+ON detalhes.filme_id = filmes.id;
+
+SELECT
+    filmes.titulo Filme,
+    generos.nome Gênero,
+    detalhes.sinopse Sinopse
+FROM filmes
+JOIN generos ON filmes.genero_id = generos.id
+JOIN detalhes ON detalhes.filme_id = filmes.id;
+```
