@@ -99,4 +99,7 @@ DELETE FROM filmes WHERE id = 6;
 
 UPDATE detalhes SET orcamento = 29000000
 WHERE id = 4;
+
+SELECT titulo, genero_id FROM filmes
+WHERE genero_id != 1;
 ```
